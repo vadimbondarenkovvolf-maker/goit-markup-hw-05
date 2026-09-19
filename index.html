@@ -412,7 +412,7 @@
       </ul>
     </div>
     <div class="subscribe">
-      <p class="text">Subscribe</p>
+      <p class="text-p">Subscribe</p>
       <label class="form">
         <input 
         class="footer-input"
@@ -421,7 +421,7 @@
           placeholder="E-mail"
           required/>
           <button type="button" class="button-footer">
-            <p class="text">Subscribe</p>
+            <p class="text-subscribe">Subscribe</p>
             <svg class="link-icon" width="24" height="24">
               <use href="./images/icons.svg#illustration"></use>
             </svg>
@@ -431,8 +431,8 @@
   </div>
     </footer>
     
-  <div class="backdrop">
-    <div class="modal">
+  <div id="modal" class="modal">
+    <div class="modal-backdrop">
       <button class="modal-button">
         <svg class="icon-close" width="8" height="8">
           <use href="./images/icons.svg#close"></use>
@@ -441,38 +441,38 @@
       <p class="modal-text">Leave your contacts and we will call you back</p>
       <form class="form-modal">
           <fieldset class="form-fieldset">
-            <div class="div-fieldset">
-            <label class="fom-label">
+            <div class="di-fieldset">
+            <form class="fom-label">
               Name
-              <div class="div-label">
+              <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#person"></use>
                 </svg>
               <input class="form-input" type="text" name="name"/>
             </div>
-            </label>
-            <label class="fom-label">
+            </form>
+            <form class="fom-label">
               Phone
-              <div class="div-label">
+              <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
               <input class="form-input" type="text" name="name"/>
             </div>
-            </label>
-            <label class="fom-label">
+            </form>
+            <form class="fom-label">
               Email
-              <div class="div-label">
+              <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#email"></use>
                 </svg>
               <input class="form-input" type="text" name="name"/>
             </div>
-            </label>
-            <label class="fom-label">
+            </form>
+            <form class="fom-label">
               Comment
               <textarea class="form-textarea" name="messege" rows="5" placeholder="Text input"></textarea>
-            </label>
+            </form>
             </div>
             <div class="agreement">
               <input 
@@ -484,7 +484,7 @@
             <label for="agreement" class="model-form-agreement">
               <span class="model-form-checkbox">
                 <svg class="model-form-checkbox-icon" width="14" height="14">
-                  <use href="./images/icons.svg#check-mark" />
+                  <use href="./images/icons.svg#check-mark"/>
                   I accept the terms and conditions of the Privacy Policy
                   <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                 </svg>
