@@ -123,10 +123,10 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #fff;
-    transition: border-color 250ms ease-in-out,
+    transition: border-color 250ms ease-in-out;
 }
 .footer-input:focus {
-    border-color: 1px solid #31d0aa;
+    color: 1px solid #31d0aa;
 }
 
 .button-footer {
@@ -170,6 +170,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     color: #fff;
 }
