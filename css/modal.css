@@ -109,7 +109,10 @@
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
-.link-icon {
+.icon-close {
+    fill: #2e2f42;
+}
+.fieldset-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
