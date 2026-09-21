@@ -443,35 +443,43 @@
           <fieldset class="form-fieldset">
             <div class="di-fieldset">
             <form class="fom-label">
+              <label class="contacts">
               Name
               <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#person"></use>
                 </svg>
-              <input class="form-input" type="text" name="name"/>
+              <input class="form-input" type="text" name="name" />
             </div>
+          </label>
             </form>
             <form class="fom-label">
+              <label class="contacts">
               Phone
               <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
-              <input class="form-input" type="text" name="name"/>
+              <input class="form-input" type="tel" name="name"/>
             </div>
+          </label>
             </form>
             <form class="fom-label">
+              <label class="contacts">
               Email
               <div class="di-label">
                 <svg class="fieldset-icon" width="18" height="24">
                   <use href="./images/icons.svg#email"></use>
                 </svg>
-              <input class="form-input" type="text" name="name"/>
+              <input class="form-input" type="email" name="name"/>
             </div>
+          </label>
             </form>
             <form class="fom-label">
+              <label class="contacts">
               Comment
               <textarea class="form-textarea" name="messege" rows="5" placeholder="Text input"></textarea>
+              </label>
             </form>
             </div>
             <div class="agreement">
@@ -481,16 +489,15 @@
             value="agreement"
             id="agreementy"
             class="sr-only"/>
-            <label for="agreement" class="model-form-agreement">
+            <label for="agreementy" class="model-form-agreement">
               <span class="model-form-checkbox">
-                <svg class="model-form-checkbox-icon" width="14" height="14">
+                <svg class="model-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#check-mark"/>
-                  I accept the terms and conditions of the Privacy Policy
-                  <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                  <a class="dec" href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
                 </svg>
               </span>
             </label>
-                <p class="link-text">I accept the terms and conditions of the Privacy Policy</p>
+                <p class="text-checkbox">I accept the terms and conditions of the Privacy Policy</p>
             </div>
           </fieldset>
       </form>
