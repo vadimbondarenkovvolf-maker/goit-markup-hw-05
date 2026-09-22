@@ -60,12 +60,13 @@
     width: 24px;
     height: 24px;
     background-color: #e7e9fc;
-    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+    color: #2e2f42;
+    transition: background-color 250ms ease, color 250ms ease;
 }
 .modal-button:hover,
 .modal-button:focus {
+    background-color: #404bbf;
     color: #fff;
-    background-color: #404bbf;  
 }
 .form-modal {
     display: flex;
@@ -119,7 +120,7 @@
     transition: border-color 250ms ease-in-out;
     outline: transparent;
     resize: none;
-    color: rgba(46, 47, 66, 0.4);
+    color: #434455;
 }
 .form-textarea:focus {
     border-color: #4d5ae5;
@@ -142,16 +143,20 @@
     gap: 4px;
 }
 .icon-close {
-    fill: #2e2f42;
+    fill: currentColor;
+    transition: fill 250ms ease;
 }
 .fieldset-icon {
     color: #2e2f42;
+    fill: currentColor;
     position: absolute;
     left: 16px;
-    transition: color 250ms ease-in-out;
     top: 50%;
     transform: translateY(-50%);
-
+    transition: color 250ms ease-in-out;
+}
+.di-label:has(.form-input:focus) .fieldset-icon {
+    color: #4d5ae5;
 }
 .form-input {
     display: flex;
@@ -169,22 +174,14 @@
     padding-left: 38px;
     transition: border-color 250ms ease-in-out;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 .form-input:focus {
+    outline: none;
     border-color: #4d5ae5;
-}
-.fieldset-icon:has(+ .form-input:focus) {
-    border-color: 1px solid #4d5ae5;
-    border-radius: 4px;
-    padding: 8px 38px;
-    width: 360px;
-    height: 40px;
-    max-width: 360px;
-    min-height: 40px;
 }
 .model-form-checkbox:checked + .checkbox {
     background-color: #404bbf;
