@@ -60,10 +60,11 @@
     height: 24px;
     background-color: #e7e9fc;
     transition: background-color 250ms ease-in-out;
+    transition: color 250ms ease-in-out;
 }
 .modal-button:hover,
 .modal-button:focus {
-    fill: #fff;
+    color: #fff;
     background-color: #404bbf;  
 }
 .form-modal {
@@ -105,7 +106,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 0;
-    border-color: #4d5ae5;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     padding: 8px 16px;
     width: 360px;
@@ -114,12 +115,13 @@
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
-    background-color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
     transition: border-color 250ms ease-in-out;
     outline: transparent;
+    resize: none;
 }
-.model-form-textarea:focus {
-    border-color: #8e8f99;
+.form-textarea:focus {
+    border-color: #4d5ae5;
 }
 .fom-label {
     font-weight: 400;
@@ -144,6 +146,7 @@
     left: 16px;
     transition: color 250ms ease-in-out;
     top: 50%;
+    transform: translateY(-50%);
 
 }
 .form-input {
@@ -152,7 +155,7 @@
     justify-content: flex-start;
     flex-direction: row;
     gap: 4px;
-    border: 1px solid #4d5ae5;;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     padding: 8px 38px;
     width: 360px;
@@ -162,7 +165,10 @@
     padding-left: 38px;
     transition: border-color 250ms ease-in-out;
 }
-.form-input:checked + .fieldset-icon {
+.form-input:focus {
+    border-color: #4d5ae5;
+}
+.fieldset-icon:checked + .form-input {
     border-color: 1px solid #4d5ae5;
     border-radius: 4px;
     padding: 8px 38px;
@@ -170,19 +176,27 @@
     height: 40px;
     max-width: 360px;
     min-height: 40px;
-    }
-    .model-form-checkbox:checked + .checkbox {
+}
+.model-form-checkbox:checked + .checkbox {
     background-color: #404bbf;
     border-color: #404bbf;
 }
 .form-checkbox {
         border-radius: 2px;
-border: 0.88px solid rgba(46, 47, 66, 0.4);
+        border: 0.88px solid rgba(46, 47, 66, 0.4);
     }
 .model-form-checkbox-icon {
+    fill: transparent;
     opacity: 0;
-    }
-.sr-only:checked + .model-form-agreement .model-form-checkbox-icon {
+    transition: opacity 250ms ease, fill 250ms ease;
+}
+    
+.sr-only:checked + .model-form-checkbox {
+    background-color: #404bbf;
+    border-color: #404bbf;
+}
+.sr-only:checked + .model-form-checkbox .model-form-checkbox-icon {
+    fill: #ffffff;
     opacity: 1;
 }
 .button-submit {
@@ -196,6 +210,7 @@ border: 0.88px solid rgba(46, 47, 66, 0.4);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
     width: 169px;
+    transition: background-color 250ms ease-in-out;
 }
 .send {
     font-weight: 500;
@@ -208,16 +223,7 @@ border: 0.88px solid rgba(46, 47, 66, 0.4);
 .button-submit:focus {
     background-color: #404bbf;
 }
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
+
 .checkbox {
     border-radius: 2px;
     border: 0.88px solid rgba(46, 47, 66, 0.4);
@@ -241,16 +247,16 @@ textarea {
     color: #4d5ae5;
 }    
 .model-form-checkbox {
-    width: 14px;
-    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
     border-radius: 2px;
     border: 0.88px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms ease, border-color 250ms ease;
 }
-.model-form-checkbox:checked {
-    background-color: #404bbf;
-    border-color: #404bbf;
-}
-.agreement {
+.model-form-agreement {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -258,4 +264,18 @@ textarea {
     flex-direction: row;
     width: 343px;
     height: 14px;
+}
+.policy-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    
+}
+.dec {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
