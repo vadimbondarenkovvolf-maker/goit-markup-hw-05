@@ -202,7 +202,7 @@
     border-color: #404bbf;
 }
 .sr-only:checked + .model-form-checkbox .model-form-checkbox-icon {
-    fill: #ffffff;
+    fill: #f4f4fd;
     opacity: 1;
 }
 .button-submit {
@@ -260,7 +260,7 @@
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 0.88px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms ease, border-color 250ms ease;
 }
 .model-form-agreement {
@@ -281,7 +281,7 @@
     
 }
 .dec {
-    line-height: 1.33333;
+    line-height: 1.17;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
