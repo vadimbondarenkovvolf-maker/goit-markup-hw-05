@@ -126,7 +126,7 @@
     transition: border-color 250ms ease-in-out;
 }
 .footer-input:focus {
-    color: 1px solid #31d0aa;
+    border-color: 1px solid #31d0aa;
 }
 
 .button-footer {
@@ -158,13 +158,6 @@
 .button-footer:hover,
 .button-footer:focus {
     background-color: #31d0aa;
-}
-.text-subscribe {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
 }
 .text-p {
     font-weight: 500;
